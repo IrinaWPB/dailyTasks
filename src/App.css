@@ -23,8 +23,9 @@ input {
 
 .add-button {
   width: 20%;
+  min-width: 80px;
   font-family: 'Sour Gummy';
-  font-size: 2rem;
+  font-size: 1.7rem;
   border: none;
   box-shadow: 0 0 10px rgb(148, 147, 147);
   border-radius: 10px;
@@ -49,20 +50,25 @@ input {
   color:rgb(87, 87, 87);
   box-shadow: 0 2px 5px rgb(216, 215, 215);
   border-radius: 3px;
-  height: 45px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .actions {
-  width: 10%;
   display: flex;
   justify-content: space-around;
+  gap: 5px
 }
 
 .actions i:hover {
   transform: scale(1.1);
   color:rgb(100, 100, 100);
   cursor: pointer;
+}
+
+.task-text {
+  max-width: 80%;
+  display:flex;
+  flex-wrap: wrap;
 }

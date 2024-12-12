@@ -9,7 +9,9 @@ export default function ToDoCard({task, deleteTodo, updateTodo}) {
 
   return (
     <div className="task-card">
-      {task}
+      <div className="task-text">
+        {task}
+      </div>
       <div className='actions'>
         <i className="fa-regular fa-pen-to-square" onClick={handleUpdatingTask}></i>
         <i className="fa-solid fa-trash" onClick={handleDeletingTask}></i>
